@@ -1,3 +1,11 @@
+This is submitted a day late.  I understand if no marks given.  Would be grateful for feedback.
+
+Everything working.
+
+Peter Chan
+A00900269
+Set 4B
+
 ######################################
 Lab 7 Starter Project - XML Processing
 ######################################
