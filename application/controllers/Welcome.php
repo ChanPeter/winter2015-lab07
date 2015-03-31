@@ -29,16 +29,20 @@ class Welcome extends Application {
         $map = directory_map('./data/');
         foreach($map as $file)
         {
+            
             if((substr_compare($file, '.xml', strlen($file)-strlen('.xml'), strlen('.xml'))) === 0
                     && substr_compare($file, 'order', 0, strlen('order')) === 0)
             {
+                // get customer name
+                $this->order->init($file);
                 $orders[] = array( 'order' => substr($file, 0, strlen($file)-strlen('.xml')),
-                'file' => $file);
+                'file' => $file, 'customer' => $this->order->customer());
             }
             
         }
         //echo var_dump($orders);die();
         sort($orders);
+        
         //echo var_dump($orders);die();
         $this->data['orders'] = $orders;
 

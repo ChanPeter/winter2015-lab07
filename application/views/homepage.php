@@ -5,7 +5,7 @@ Barker Bob's Burger Bar - Orders
     {orders}
     <tr>
         <td>
-            <a href="welcome/order/{file}">{order}</a>
+            <a href="welcome/order/{file}">{order}({customer})</a>
         </td>
     </tr>
     {/orders}
