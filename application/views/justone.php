@@ -18,5 +18,3 @@ Special Instructions for order: {special}<br/><br/>
 </table>
 
 Burger Total:   ${orderTotal}<br/><br/>
-
-Select an order from the list above to see it's receipt.
